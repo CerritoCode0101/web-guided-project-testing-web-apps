@@ -21,7 +21,7 @@ test("user can fill out and submit form", ()=> {
     const ageInput = screen.getByLabelText(/age/i);
     const notesInput = screen.getByLabelText(/notes/i);
 
-    userEvent.type(speciesInput, "3");
+    userEvent.type(speciesInput, "canine");
     userEvent.type(ageInput, "3");
     userEvent.type(notesInput, "the cutest!!!!");
 
@@ -30,6 +30,6 @@ test("user can fill out and submit form", ()=> {
     
     //Assert: Test to see is submit worked
     //  1. Find our submitted species name
-    const newAnimal = screen.queryByText(/3/i);
+    const newAnimal = screen.queryByText(/canine/i);
     expect(newAnimal).toBeInTheDocument();
 });
