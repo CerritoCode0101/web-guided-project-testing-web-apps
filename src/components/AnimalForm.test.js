@@ -24,6 +24,8 @@ test("user can fill out and submit form", ()=> {
     userEvent.type(speciesInput, "canine");
     userEvent.type(ageInput, "3");
     userEvent.type(notesInput, "the cutest!!!!");
+
+    const button = screen.getByRole()
     
     //Assert: Test to see is submit worked
     //  1. Find our submitted species name
