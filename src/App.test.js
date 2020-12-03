@@ -11,7 +11,7 @@ test("renders the app header", ()=> {
     render(<App />);
 
     //Act: Execute our behavior
-    const header = screen.getByText("Add New Animal");
+    const header = screen.getByText("add new Animal");
     console.log(header);
     
 
