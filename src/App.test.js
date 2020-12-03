@@ -11,9 +11,8 @@ test("renders the app header", ()=> {
     render(<App />);
 
     //Act: Execute our behavior
-    // const header = screen.queryByText("Add New Animal");
-    const header = screen.queryByTestId("header");
-    console.log(header);
+    const header = screen.queryByText("Add New Animal");
     
     //Assert: Test our app response
+    
 });
