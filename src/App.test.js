@@ -11,10 +11,10 @@ test("renders the app header", ()=> {
     render(<App />);
 
     //Act: Execute our behavior
-    const header = screen.queryByText("add New Animal");
+    const header = screen.queryByText(/add new animal/i);
     
     //Assert: Test our app response
     expect(header).toBeTruthy();
     expect(header).toBeInTheDocument();
-    expect(header).toHaveTextContent("Add New Animal");
+    expect(header).toHaveTextContent(/add new animal/i);
 });
