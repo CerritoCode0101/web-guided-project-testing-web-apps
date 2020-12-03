@@ -19,4 +19,5 @@ test("renders the app header", ()=> {
     expect(header).toHaveTextContent("Add New Animal");
 
     expect(header).not.toBeFalsy();
+    expect(header).not.toHaveTextContent("Add New Animal");
 });
