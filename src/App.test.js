@@ -14,7 +14,13 @@ test("renders the app header", ()=> {
     const header = screen.queryByText(/add new animal/i);
     
     //Assert: Test our app response
+    
+    //Positive Assertions
     expect(header).toBeTruthy();
     expect(header).toBeInTheDocument();
     expect(header).toHaveTextContent(/add new animal/i);
+
+    //Negative Assertions
+    expect(header).not.toBeFalsy();
+    expect(header).not.toHaveTextContent(/add old animal/i);
 });
