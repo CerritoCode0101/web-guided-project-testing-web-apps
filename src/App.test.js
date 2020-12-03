@@ -12,5 +12,4 @@ test("example test 2", ()=>{
 
 test("example test 3", ()=>{
     console.log("test passes");
-    throw new Error("fake error");
 });
