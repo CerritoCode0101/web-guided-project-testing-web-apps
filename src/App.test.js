@@ -4,5 +4,5 @@ import App from "./App";
 
 
 test("renders without errors", ()=>{
-    console.log("test passes");
+    render(<App />);
 });
