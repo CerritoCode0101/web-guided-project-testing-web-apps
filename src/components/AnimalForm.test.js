@@ -21,6 +21,7 @@ test("user can fill out and submit form", ()=> {
     const ageInput = screen.getByLabelText(/age/i);
     const notesInput = screen.getByLabelText(/notes/i);
 
+    userEvent.type(speciesInput, "canine")
     
     //Assert: Test to see is submit worked
     //  1. Find our submitted species name
