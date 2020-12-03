@@ -15,7 +15,7 @@ test("user can fill out and submit form", ()=> {
     //  2. Type into our form elements.
     //  3. Query for our form button.
     //  4. Click our form button.
-    const speciesInput = screen.queryByLabelText(/species2/i);
+    const speciesInput = screen.getByLabelText(/species2/i);
     console.log(speciesInput);
 
     //Assert: Test to see is submit worked
