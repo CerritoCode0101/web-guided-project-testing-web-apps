@@ -6,7 +6,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <h1 data-testId="header">Add New Animal</h1>
+      <h1 data-testid="header">Add New Animal</h1>
       <AnimalForm />
     </div>
   );
