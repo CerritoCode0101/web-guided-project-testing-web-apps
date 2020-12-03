@@ -30,6 +30,6 @@ test("user can fill out and submit form", ()=> {
     
     //Assert: Test to see is submit worked
     //  1. Find our submitted species name
-    const newAnimal = screen.queryByText(/doggie/i);
+    const newAnimal = screen.queryByText(/canine/i);
     expect(newAnimal).toBeInTheDocument();
 });
