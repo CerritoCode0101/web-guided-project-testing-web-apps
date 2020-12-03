@@ -8,11 +8,10 @@ test("renders without errors", ()=>{
 
 test("renders the app header", ()=> {
     //Arrange: Setup our react component
-    const app = render(<App />);
-    console.log(app);
+    render(<App />);
 
-    // //Act: Execute our behavior
-    // const header = screen.queryByText("Add New Animal");
+    //Act: Execute our behavior
+    const header = screen.queryByText("Add New Animal");
     
     // //Assert: Test our app response
     // expect(header).toBeTruthy();
